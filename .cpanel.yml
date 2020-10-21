@@ -1,0 +1,9 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home2/cervial/repositories/cervial_laravel
+    - /bin/cp -r * $DEPLOYPATH
+    - /bin/cp index.php $DEPLOYPATH/public
+    - /bin/cp style.css $DEPLOYPATH
+    - /bin/cp ./public/js/*.js $DEPLOYPATH/public/js
+    - /bin/cp ./public/css/*.css $DEPLOYPATH/public/css
